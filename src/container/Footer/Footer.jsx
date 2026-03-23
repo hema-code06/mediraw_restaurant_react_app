@@ -4,7 +4,7 @@ import './Footer.css';
 import { images } from '../../constants';
 
 const Footer = () => (
-  <div className="app__bg app__footer section__padding" id="footer">
+  <div className="app__bg app__footer section__padding" id="contact">
     <img src={images.Footer} style={{ width: "530px" }} alt="footer_logo" />
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
@@ -31,7 +31,7 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyright">
-      <p className="p__opensans" style={{ textAlign: "center" }}>2023 Mediterranean. All Rights reserved.</p>
+      <p className="p__opensans" style={{ textAlign: "center" }}>2026 Mediterranean. All Rights reserved.</p>
     </div>
   </div>
 );

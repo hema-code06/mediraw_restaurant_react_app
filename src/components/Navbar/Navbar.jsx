@@ -22,7 +22,7 @@ const Navbar = () => {
           <a href="#chef">Chef</a>
         </li>
         <li className="p__opensans">
-          <a href="#meal">About</a>
+          <a href="#about">About</a>
         </li>
         <li className="p__opensans">
           <a href="#contact">Contact</a>
@@ -30,7 +30,7 @@ const Navbar = () => {
       </ul>
       <div className="app__navbar-signin">
         <div />
-        <a href="#footer" className="p__opensans">
+        <a href="#contact" className="p__opensans">
           Book Table
         </a>
       </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <a href="#chef">Chef</a>
               </li>
               <li className="p__opensans">
-                <a href="#meal">About</a>
+                <a href="#about">About</a>
               </li>
               <li className="p__opensans">
                 <a href="#contact">Contact</a>

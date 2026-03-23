@@ -5,7 +5,7 @@ const Find = () => (
   <div
     className="app__wrapper section__padding"
     style={{ background: "beige" }}
-    id="contact"
+    id="about"
   >
     <div className="find_image">
       <img src={images.spn} alt="find_img" />

@@ -1,5 +1,5 @@
 import React from "react";
-import { SubHeading } from '../../components';
+import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Content.css";
 
@@ -17,9 +17,9 @@ const Content = () => (
         Mediterranean food embodies the essence of healthy living with its focus
         on fresh, wholesome ingredients and vibrant, satisfying flavors.
       </p>
-      <button type="button" id="#menu" className="custom__button">
+      <a href="#menu" className="custom__button">
         Check Out The Menu !!
-      </button>
+      </a>
     </div>
   </div>
 );
