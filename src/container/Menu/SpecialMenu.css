@@ -1,0 +1,136 @@
+.app__specialMenu {
+    flex-direction: column;
+    background-color: beige;
+}
+
+.app__specialMenu-title {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.app__specialMenu-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.app__specialMenu-menu_heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: black;
+}
+
+/* Keyframes for image animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+/* Keyframes for text animation */
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeftText {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+/* Apply animations */
+.image-animation {
+    animation: slideInFromLeft 2s ease-in-out forwards;
+}
+
+.text-animation {
+    animation: slideInFromRight 2s ease-in-out forwards;
+}
+
+.text-animation-left {
+    animation: slideInFromLeftText 2s ease-in-out forwards;
+}
+
+.text-animation-right {
+    animation: slideInFromRight 2s ease-in-out forwards;
+}
+
+.app__specialMenu-menu_coastline,
+.app__specialMenu-menu_mezze {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__specialMenu-menu_img {
+    width: 410px;
+    margin: 0 2rem;
+}
+
+.app__specialMenu-menu_img img {
+    width: 100%;
+    height: auto;
+}
+
+.app__specialMenu_menu_items {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__specialMenu-menu_img {
+        width: 650px;
+    }
+
+    .app__specialMenu-menu_img img {
+        height: 920px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__specialMenu-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_img {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__specialMenu-menu_img {
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_heading {
+        font-size: 35px;
+        line-height: 48.5px;
+    }
+}
