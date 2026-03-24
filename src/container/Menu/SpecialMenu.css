@@ -25,7 +25,6 @@
     color: black;
 }
 
-/* Keyframes for image animation */
 @keyframes slideInFromLeft {
     0% {
       transform: translateX(-100%);
@@ -37,7 +36,6 @@
     }
 }
 
-/* Keyframes for text animation */
 @keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
@@ -60,7 +58,6 @@
     }
 }
 
-/* Apply animations */
 .image-animation {
     animation: slideInFromLeft 2s ease-in-out forwards;
 }

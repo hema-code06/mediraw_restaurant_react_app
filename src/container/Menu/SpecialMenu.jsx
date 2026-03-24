@@ -13,7 +13,6 @@ const SpecialMenu = () => (
 
     <div className="app__specialMenu-menu">
 
-      {/* Coastline */}
       <div className="app__specialMenu-menu_coastline flex__center left-to-right-animation">
         <p className="app__specialMenu-menu_heading">Coastline</p>
 
@@ -28,12 +27,10 @@ const SpecialMenu = () => (
         </div>
       </div>
 
-      {/* Image */}
       <div className="app__specialMenu-menu_img left-to-right-animation">
         <img src={images.menu} alt="menu__img" />
       </div>
 
-      {/* Mezze */}
       <div className="app__specialMenu-menu_mezze flex__center right-to-left-animation">
         <p className="app__specialMenu-menu_heading">Mezze</p>
 

@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# 🍽️ Mediterraw Eaterie Restaurant Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and visually rich **React-based restaurant website** showcasing Mediterranean cuisine, interactive menus, gallery, and engaging UI components.
 
-## Available Scripts
+This project highlights a full frontend experience with smooth animations, responsive navigation, and elegant design inspired by Mediterranean culture.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🧭 Navigation
+- Responsive **Navbar with hamburger menu**
+- Smooth scrolling between sections
+- Mobile-friendly overlay menu
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🏠 Landing Page
+- Attractive hero section with:
+  - Title & tagline
+  - Call-to-action button
+  - Animated visuals
 
-### `npm test`
+### 🍴 Special Menu
+- Dynamic menu rendering using reusable components
+- Categorized dishes:
+  - **Coastline Specials**
+  - **Mezze Items**
+- Clean UI displaying:
+  - Dish name
+  - Price
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 👨‍🍳 Chef Section
+- Inspirational chef quotes
+- Founder introduction
+- Styled signature section
 
-### `npm run build`
+### 🎥 Video Intro
+- Interactive video player
+- Play/Pause toggle functionality
+- Overlay UI with controls
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🖼️ Gallery
+- Horizontal scrollable image gallery
+- Navigation arrows for scrolling
+- Instagram-style overlay icons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📍 Find Us Section
+- Restaurant location details
+- Opening hours
+- Call-to-action button
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📞 Footer
+- Contact information
+- Working hours
+- Social media icons
+- Clean structured layout
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend
+- **React**
+- **CSS3**
+- **React Icons**
+- **JavaScript (ES6+)**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Design & UI
+- Custom CSS animations
+- Responsive layout
+- Flexbox & modern styling techniques
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ⚙️ Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1️⃣ Clone the Repository
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/hema-code06/mediraw_restaurant_react_app.git
+cd mediraw_restaurant_react_app
+```
 
-### Code Splitting
+### 2️⃣ Install Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm install
+npm install react-icons
+```
 
-### Analyzing the Bundle Size
+### 3️⃣ Run the Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+#### App will run on: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 💡 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Online table booking system
+- Authentication for users
+- Admin dashboard for menu management
+- Payment gateway integration
+- Dark mode support
+- SEO optimization
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🧠 Key Concepts Used
 
-### `npm run build` fails to minify
+- Component-based architecture
+- Props for dynamic rendering
+- React Hooks (useState, useRef)
+- Conditional rendering
+- Reusable UI components
+- Asset management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+⭐ If you like this project, consider giving it a **star on GitHub**!

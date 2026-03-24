@@ -1,0 +1,170 @@
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal__content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 380px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-top: 6px solid orangered;
+
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+.modal__content:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease;
+}
+
+.modal__content h2 {
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: olivedrab;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.modal__close-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  color: orangered;
+  transition: transform 0.2s ease;
+}
+
+.modal__close-icon:hover {
+  transform: scale(1.2);
+}
+.reservation__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation__form input {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.reservation__form input:focus {
+  border-color: orangered;
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.4);
+}
+
+.reservation__form button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.reservation__form button[type="submit"] {
+  background: olivedrab;
+  color: #fff;
+}
+
+.reservation__form button[type="submit"]:hover {
+  background: #556b2f;
+  transform: translateY(-2px);
+}
+
+.close__btn {
+  background: orangered;
+  color: #fff;
+}
+
+.close__btn:hover {
+  background: #c13a09;
+  transform: translateY(-2px);
+}
+
+.Toastify__toast {
+  max-width: 100%;
+  min-width: 250px;
+  width: auto !important;
+  white-space: pre-line;
+}
+
+.Toastify__toast-body {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal__content {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal__content {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+
+  .reservation__form input {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .reservation__form button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .modal__content h2 {
+    font-size: 1.2rem;
+  }
+  .Toastify__toast {
+    width: 90% !important;
+  }
+}

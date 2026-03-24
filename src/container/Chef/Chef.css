@@ -43,7 +43,6 @@
     }
 }
 
-/* Keyframes for image animation */
 @keyframes leftToRight {
     0% {
         transform: translateX(-100%);
@@ -55,7 +54,6 @@
     }
 }
 
-/* Keyframes for text animation */
 @keyframes rightToLeft {
     0% {
         transform: translateX(-100%);
@@ -67,7 +65,6 @@
     }
 }
 
-/* Apply animations */
 .left-to-right-animation {
     animation: leftToRight 2s ease-in-out forwards;
 }
