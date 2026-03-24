@@ -58,7 +58,7 @@ const Reservation = ({ isOpen, onClose }) => {
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-        theme: "light",
+        theme: "dark",
       },
     );
 
