@@ -110,11 +110,31 @@
   min-width: 250px;
   width: auto !important;
   white-space: pre-line;
+
+  background: #e6f4ea !important;   /* soft green */
+  color: #1e4620 !important;        /* dark green text */
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.Toastify__toast--success {
+  background: #e6f4ea !important;
+  color: #1e4620 !important;
 }
 
 .Toastify__toast-body {
   white-space: pre-wrap;
   word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Toastify__progress-bar--success {
+  display: none; 
 }
 
 @keyframes fadeIn {

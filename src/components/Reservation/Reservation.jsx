@@ -46,19 +46,19 @@ const Reservation = ({ isOpen, onClose }) => {
     toast.success(
       <span>
         🍽️ Table booked on{" "}
-        <span style={{ color: "orangered", fontWeight: "600" }}>
+        <span style={{ color: "#2e7d32", fontWeight: "600" }}>
           {formattedDate}
         </span>{" "}
         successfully!
       </span>,
       {
-        position: "top-right",
+        position: "top-center",
         autoClose: 4500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-        theme: "dark",
+        icon:"✔️",
       },
     );
 
