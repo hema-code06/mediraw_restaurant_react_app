@@ -1,0 +1,79 @@
+.find {
+  text-align: center;
+  background: beige;
+}
+
+/* TITLE */
+.find-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* GRID */
+.find__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* CARD */
+.find__card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.find__card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.find__card h3 {
+  margin-top: 1rem;
+  color: olivedrab;
+}
+
+.find__card p {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  color: #555;
+}
+
+/* HOVER */
+.find__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* CTA */
+.find-btn {
+  margin-top: 2rem;
+  padding: 12px 24px;
+  border: none;
+  background: orangered;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.find-btn:hover {
+  background: #222;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .find-title {
+    font-size: 1.8rem;
+  }
+
+  .find__card img {
+    height: 150px;
+  }
+}

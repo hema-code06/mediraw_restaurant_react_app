@@ -94,7 +94,10 @@
   background: #556b2f;
   transform: translateY(-2px);
 }
-
+.reservation__form button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
 .close__btn {
   background: orangered;
   color: #fff;
@@ -111,8 +114,8 @@
   width: auto !important;
   white-space: pre-line;
 
-  background: #e6f4ea !important;   /* soft green */
-  color: #1e4620 !important;        /* dark green text */
+  background: #e6f4ea !important; /* soft green */
+  color: #1e4620 !important; /* dark green text */
   border: 1px solid #c3e6cb;
   border-radius: 8px;
   padding: 10px 14px;
@@ -134,7 +137,7 @@
 }
 
 .Toastify__progress-bar--success {
-  display: none; 
+  display: none;
 }
 
 @keyframes fadeIn {
@@ -165,10 +168,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .modal__overlay {
+    align-items: flex-end;
+  }
+
   .modal__content {
-    width: 100%;
-    padding: 1.2rem;
-    border-radius: 12px;
+    border-radius: 16px 16px 0 0;
   }
 
   .reservation__form input {

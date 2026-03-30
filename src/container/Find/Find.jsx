@@ -1,45 +1,68 @@
 import React from "react";
 import { images } from "../../constants";
+import "./Find.css";
+import { motion } from "framer-motion";
 
-const Find = () => (
-  <div
-    className="app__wrapper section__padding"
-    style={{ background: "beige" }}
-    id="about"
-  >
-    <div className="find_image">
-      <img src={images.spn} alt="find_img" />
-    </div>
-    <div className="app__wrapper_info">
-      <h1 className="headtext__cormorant" style={{ marginBottom: "2rem" }}>
-        Dine with Us
-      </h1>
-      <div className="app__wrapper-content">
-        <p className="p__opensans">
-          Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 75G
-        </p>
-        <p
-          className="p__cormorant"
-          style={{ color: "olivedrab", paddingTop: "5rem" }}
-        >
-          Opening Hours
-        </p>
-        <p className="p__opensans">Mon - Fri: 08:00 am - 03:00 am</p>
-        <p className="p__opensans">Sat - Sun: 09:00 am - 05:00 am</p>
-      </div>
-      <button
-        type="button"
-        className="custom__button"
-        style={{ marginTop: "2rem" }}
+const Find = () => {
+  return (
+    <div className="find section__padding" id="contact">
+      <motion.h1
+        className="find-title"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
       >
         Visit Our Restaurant
-      </button>
-    </div>
+      </motion.h1>
 
-    <div className="app__wrapper_img" style={{ marginTop: "7rem" }}>
-      <img src={images.findus} alt="finus_img" />
+      <div className="find__modern">
+
+        {/* 🔥 CARDS */}
+        <div className="find__cards">
+
+          <motion.div
+            className="find__card"
+            whileHover={{ scale: 1.05 }}
+          >
+            <img src={images.findus} alt="location" />
+            <h3>Location</h3>
+            <p>Lane Ends Bungalow, Rudheath, CW9</p>
+          </motion.div>
+
+          <motion.div
+            className="find__card"
+            whileHover={{ scale: 1.05 }}
+          >
+            <img src={images.spn} alt="hours" />
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 8AM - 3AM</p>
+            <p>Sat - Sun: 9AM - 5AM</p>
+          </motion.div>
+
+          <motion.div
+            className="find__card"
+            whileHover={{ scale: 1.05 }}
+          >
+            <img
+              src="https://source.unsplash.com/400x300/?restaurant,interior"
+              alt="experience"
+            />
+            <h3>Ambience</h3>
+            <p>Luxury Mediterranean dining experience</p>
+          </motion.div>
+
+        </div>
+
+        {/* 🔥 CTA */}
+        <motion.button
+          className="find-btn"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Book Your Table
+        </motion.button>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Find;

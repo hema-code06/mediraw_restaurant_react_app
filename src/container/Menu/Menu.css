@@ -1,0 +1,46 @@
+.menu {
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Search */
+.menu-search {
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+/* Filters */
+.menu-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.menu-filters button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-filters .active {
+  background: orangered;
+  color: white;
+}
+
+/* Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.no-results {
+  margin-top: 2rem;
+}

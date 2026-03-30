@@ -1,5 +1,4 @@
 import React from "react";
-import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Content.css";
 
@@ -9,7 +8,6 @@ const Content = () => (
       <img src={images.welcome} alt="header_img" className="image-animation" />
     </div>
     <div className="app__wrapper_info">
-      <SubHeading title="Mediterranean Palate : Delight in Every Bite.." />
       <h1 className="app__header-h1 text-animation">
         Indulge in the Essence of Mediterranean Delights..
       </h1>

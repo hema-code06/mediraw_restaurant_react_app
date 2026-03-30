@@ -1,9 +1,15 @@
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 .section__padding {
-  padding: 4rem 6rem;
+  padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 6vw, 6rem);
 }
 
 .app__bg {
-  background: url("./assets/bg.png");
+  background: url("./assets/bg.png") center/cover repeat fixed;
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -11,8 +17,10 @@
 }
 .app__wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 4rem 1rem !important;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(2rem, 5vw, 4rem) 0;
   background-color: beige;
 }
 
@@ -38,26 +46,26 @@
 }
 
 .app__wrapper_img img {
-  width: 80%;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .custom__button {
-  background-color: rgb(243, 90, 35);
+  background: linear-gradient(135deg, orangered, #ff7a18);
   color: white;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
-  padding: 0.2rem 0.8rem;
-  border-radius: 5px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
   border: none;
-  outline: none;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.3s ease;
 }
+
 .custom__button:hover {
-  color: #333;
-  background-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 69, 0, 0.3);
 }
 
 .p__cormorant {
@@ -66,7 +74,9 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  font-feature-settings: "tnum" on, "lnum" on;
+  font-feature-settings:
+    "tnum" on,
+    "lnum" on;
   line-height: 29.9px;
   font-size: 23px;
   margin-bottom: 5%;
@@ -86,8 +96,9 @@
 .headtext__cormorant {
   font-family: "Times New Roman", Times, serif;
   color: rgb(86, 128, 2);
-  font-size: 40px;
-  line-height: 83.2px;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.2;
+  font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: capitalize;
 }
@@ -131,15 +142,13 @@
 
 @media screen and (max-width: 850px) {
   .section__padding {
-    padding: 40rem;
     overflow-x: hidden;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .section__padding {
-    padding: 4rem 2rem;
-    overflow-x: hidden;
+    padding: 3rem 1.5rem
   }
 
   .p__cormorant {

@@ -1,22 +1,35 @@
-.app__menuitem {
-    width: 100%;
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
+.menu-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
-.app__menuitem-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.menu-card:hover {
+  transform: translateY(-5px);
 }
 
-.app__menuitem-name {
-    flex: 1;
+.price {
+  color: orangered;
+  font-weight: bold;
 }
 
-.app__menuitem-price {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+/* Tag */
+.tag {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.tag.veg {
+  background: green;
+  color: white;
+}
+
+.tag.non-veg {
+  background: red;
+  color: white;
 }
