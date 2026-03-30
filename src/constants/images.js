@@ -1,4 +1,3 @@
-import bg from '../assets/bg.png';
 import chef from '../assets/cc.png';
 import gallery01 from '../assets/G1.jpg';
 import gallery02 from '../assets/G2.jpg';
