@@ -23,7 +23,6 @@ import spn from '../assets/spn.png';
 
 
 export default {
-  bg,
   chef,
   Footer,
   spn,
