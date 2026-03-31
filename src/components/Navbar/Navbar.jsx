@@ -31,7 +31,7 @@ const Navbar = () => {
         root: null,
         rootMargin: "-40% 0px -50% 0px",
         threshold: 0,
-      }
+      },
     );
 
     sections.forEach((id) => {
@@ -77,7 +77,11 @@ const Navbar = () => {
 
         <div className="app__navbar-signin">
           <button onClick={() => setShowModal(true)} className="book-btn">
-            Book Table
+            <img
+              src="/assets/reservation.png"
+              alt="Book Table"
+              className="book-icon"
+            />
           </button>
         </div>
       </nav>
