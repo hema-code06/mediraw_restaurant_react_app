@@ -7,21 +7,12 @@
 .section__padding {
   padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 6vw, 6rem);
 }
-
-.app__bg {
-  background: beige center/cover repeat fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
 .app__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: clamp(1.5rem, 4vw, 3rem);
   padding: clamp(2rem, 5vw, 4rem) 0;
-  background-color: beige;
 }
 
 .app__wrapper_info {
@@ -53,7 +44,7 @@
 }
 
 .custom__button {
-  background: linear-gradient(135deg, orangered, #ff7a18);
+  background: linear-gradient(135deg, orangered, #ff9143);
   color: white;
   padding: 0.6rem 1.5rem;
   border-radius: 8px;

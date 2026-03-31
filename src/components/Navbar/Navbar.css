@@ -1,43 +1,46 @@
 .app__navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-  backdrop-filter: blur(10px);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
   padding: 1rem 2rem;
-  transition: all 0.3s ease;
-  background: transparent;
-}
-
-/* 🔥 Scroll effect */
-.app__navbar.scrolled {
-  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
-/* Logo */
+.app__navbar.scrolled {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .app__navbar-logo img {
-  width: 180px;
+  width: 160px;
 }
 
-/* Links */
 .app__navbar-links {
   display: flex;
   gap: 2rem;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .app__navbar-links li {
   cursor: pointer;
   text-transform: capitalize;
   font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: relative;
+  white-space: nowrap;
 }
 
-/* 🔥 Active link */
 .app__navbar-links li.active {
   color: orangered;
 }
@@ -52,7 +55,6 @@
   left: 0;
 }
 
-/* CTA Button */
 .book-btn {
   padding: 8px 16px;
   border: none;
@@ -61,51 +63,44 @@
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .book-btn:hover {
   background: #222;
 }
 
-/* Mobile */
-.app__navbar-smallscreen {
-  display: none;
+body {
+  padding-top: 90px;
 }
 
-.app__navbar-smallscreen_overlay {
-  position: fixed;
-  inset: 0;
-  background: #111;
-  color: white;
-  flex-direction: column;
-  z-index: 999;
-}
-
-.overlay__close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-}
-
-.app__navbar-smallscreen_links {
-  list-style: none;
-  text-align: center;
-}
-
-.app__navbar-smallscreen_links li {
-  margin: 2rem 0;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Responsive */
 @media screen and (max-width: 900px) {
-  .app__navbar-links {
-    display: none;
+  .app__navbar {
+    padding: 0.8rem 1rem;
   }
 
-  .app__navbar-smallscreen {
-    display: block;
+  .app__navbar-links {
+    gap: 1rem;
+  }
+
+  .app__navbar-logo img {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .app__navbar-links {
+    justify-content: center;
+  }
+
+  .book-btn {
+    padding: 6px 12px;
+    font-size: 14px;
   }
 }
