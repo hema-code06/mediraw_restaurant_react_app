@@ -5,7 +5,7 @@ import "./Content.css";
 const Content = () => (
   <div className="app__header app__bg app__wrapper" id="home">
     <div className="app__wrapper_img">
-      <img src={images.welcome} alt="header_img" className="image-animation" />
+      <img src={images.welcome} alt="Welcome" className="image-animation" />
     </div>
     <div className="app__wrapper_info">
       <h1 className="app__header-h1 text-animation">
