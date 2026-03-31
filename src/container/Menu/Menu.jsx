@@ -18,22 +18,24 @@ const Menu = () => {
 
   return (
     <div className="menu section__padding" id="menu">
-      <h1 className="menu-title">Explore Our Menu</h1>
+      <h1 className="menu-title">Discover what’s on our menu</h1>
 
-      {/* 🔍 Search */}
-      <input
-        type="text"
-        placeholder="Search dishes..."
-        className="menu-search"
-        onChange={(e) => setSearch(e.target.value)}
-      />
+      <div className="menu-search-wrapper">
+        <input
+          type="text"
+          placeholder="Search dishes..."
+          className="menu-search"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <span className="search-icon">🔍</span>
+      </div>
 
-      {/* 🔥 Filters */}
       <div className="menu-filters">
         {categories.map((cat) => (
           <button
             key={cat}
-            className={filter === cat ? "active" : ""}
+            className={`filter-btn ${filter === cat ? "active" : ""}`}
             onClick={() => setFilter(cat)}
           >
             {cat}
@@ -41,7 +43,6 @@ const Menu = () => {
         ))}
       </div>
 
-      {/* 🍽 Items */}
       <div className="menu-grid">
         {filteredMenu.length > 0 ? (
           filteredMenu.map((item) => (

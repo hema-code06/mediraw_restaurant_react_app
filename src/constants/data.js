@@ -1,3 +1,13 @@
+import falafel from "../assets/Falafel.png";
+import Fattoush from "../assets/Fattoush.png";
+import GrilledHalloumi from "../assets/Grilled Halloumi.png";
+import Hummus from "../assets/Hummus.png";
+import Linguine from "../assets/Linguine alle Vongole.png";
+import muhammara from "../assets/Muhammara.png";
+import paella from "../assets/Paella Valenciana.png";
+import spanakopita from "../assets/Spanakopita.png";
+import tzatziki from "../assets/Tzatziki.png";
+
 const menu = [
   {
     id: 1,
@@ -5,6 +15,7 @@ const menu = [
     price: 156,
     category: "coastline",
     type: "non-veg",
+    image: paella,
   },
   {
     id: 2,
@@ -12,13 +23,15 @@ const menu = [
     price: 256,
     category: "coastline",
     type: "non-veg",
+    image: Linguine,
   },
   {
     id: 3,
-    title: "Greek Grilled Octopus",
+    title: "Spanakopita",
     price: 556,
     category: "coastline",
-    type: "non-veg",
+    type: "veg",
+    image: spanakopita,
   },
   {
     id: 4,
@@ -26,6 +39,7 @@ const menu = [
     price: 156,
     category: "mezze",
     type: "veg",
+    image: Hummus,
   },
   {
     id: 5,
@@ -33,6 +47,7 @@ const menu = [
     price: 256,
     category: "mezze",
     type: "veg",
+    image: falafel,
   },
   {
     id: 6,
@@ -40,6 +55,31 @@ const menu = [
     price: 356,
     category: "mezze",
     type: "veg",
+    image: tzatziki,
+  },
+  {
+    id: 7,
+    title: "Fattoush",
+    price: 156,
+    category: "mezze",
+    type: "veg",
+    image: Fattoush,
+  },
+  {
+    id: 8,
+    title: "Grilled Halloumi",
+    price: 556,
+    category: "mezze",
+    type: "veg",
+    image: GrilledHalloumi,
+  },
+  {
+    id: 9,
+    title: "Muhammara",
+    price: 256,
+    category: "mezze",
+    type: "veg",
+    image: muhammara,
   },
 ];
 
