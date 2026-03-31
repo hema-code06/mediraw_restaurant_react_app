@@ -124,6 +124,9 @@
   .menu-search {
     max-width: 350px;
   }
+  .search-icon {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -133,6 +136,9 @@
   .menu-filters {
     gap: 8px;
   }
+  .search-icon {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -141,6 +147,9 @@
   }
   .menu-search {
     width: 95%;
+  }
+  .search-icon {
+    margin-right: 20px;
   }
   .menu-grid {
     grid-template-columns: 1fr;

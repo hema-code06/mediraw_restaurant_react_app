@@ -3,7 +3,6 @@ import { images } from "../../constants";
 import "./Chef.css";
 import { motion } from "framer-motion";
 
-// 🔥 Count-up hook
 const useCountUp = (end, duration = 2000) => {
   const [count, setCount] = useState(0);
 
@@ -30,13 +29,11 @@ const useCountUp = (end, duration = 2000) => {
 const Chef = () => {
   const exp = useCountUp(15);
   const dishes = useCountUp(50);
-  const rating = useCountUp(48); // 4.8 → 48 / 10
+  const rating = useCountUp(48);
 
   return (
     <div className="chef section__padding" id="chef">
       <div className="chef-container">
-
-        {/* IMAGE */}
         <motion.div
           className="chef-image"
           initial={{ opacity: 0, x: -80 }}
@@ -46,7 +43,6 @@ const Chef = () => {
           <img src={images.chef} alt="chef" />
         </motion.div>
 
-        {/* CONTENT */}
         <motion.div
           className="chef-content"
           initial={{ opacity: 0, x: 80 }}
@@ -56,15 +52,16 @@ const Chef = () => {
           <h2 className="chef-title">Meet Our Chef</h2>
 
           <p className="chef-quote">
-            “In our kitchen, passion meets precision — every dish tells a story.”
+            “In our kitchen, passion meets precision — every dish tells a
+            story.”
           </p>
 
           <p className="chef-desc">
             With years of Mediterranean culinary mastery, Chef Liholiho blends
-            tradition with innovation. Every plate reflects culture, flavor, and art.
+            tradition with innovation. Every plate reflects culture, flavor, and
+            art.
           </p>
 
-          {/* 🔥 Animated Stats */}
           <div className="chef-highlights">
             <motion.div whileHover={{ scale: 1.1 }}>
               <h3>{exp}+</h3>
@@ -82,7 +79,6 @@ const Chef = () => {
             </motion.div>
           </div>
 
-          {/* SIGNATURE */}
           <motion.div
             className="chef-sign"
             initial={{ opacity: 0, y: 40 }}
@@ -94,7 +90,6 @@ const Chef = () => {
             <img src={images.sign} alt="sign" />
           </motion.div>
         </motion.div>
-
       </div>
     </div>
   );

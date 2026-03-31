@@ -17,7 +17,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.app__wrapper_img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
 .app__wrapper_info {
   flex: 1;
   width: 100%;
@@ -99,6 +104,22 @@ body {
 @media screen and (max-width: 1150px) {
   .app__header-h1 {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__wrapper {
+    flex-direction: column;
+    padding: 2rem 2%;
+  }
+
+  .app__wrapper_info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .app__wrapper_img {
+    margin-bottom: 2rem;
   }
 }
 
