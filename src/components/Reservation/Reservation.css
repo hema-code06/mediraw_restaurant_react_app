@@ -24,7 +24,7 @@
   text-align: center;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   border-top: 6px solid orangered;
-
+  position: relative;
   animation: scaleIn 0.3s ease-in-out;
 }
 
@@ -42,10 +42,11 @@
 }
 .modal__close-icon {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  color: orangered;
+  color: red;
+  z-index: 10;
   transition: transform 0.2s ease;
 }
 

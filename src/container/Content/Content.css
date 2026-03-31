@@ -1,6 +1,7 @@
-
-  
-  .app__header-h1 {
+body {
+  padding-top: 50px;
+}
+.app__header-h1 {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: rgb(5, 107, 5);
     font-weight: 700;

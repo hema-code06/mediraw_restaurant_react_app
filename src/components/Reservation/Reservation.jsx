@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import "./Reservation.css";
 import { toast } from "react-toastify";
 import { AiOutlineClose } from "react-icons/ai";
@@ -15,24 +15,12 @@ const Reservation = ({ isOpen, onClose }) => {
   const [loading, setLoading] = useState(false);
   const modalRef = useRef();
 
-  // 🔥 Close on outside click
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (modalRef.current && !modalRef.current.contains(event.target)) {
-        onClose();
-      }
-    };
-    document.addEventListener("mousedown", handleOutsideClick);
-    return () => document.removeEventListener("mousedown", handleOutsideClick);
-  }, [onClose]);
-
   if (!isOpen) return null;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 🔥 Validation
   const validateForm = () => {
     const { name, phone, guests, date, time } = formData;
 
@@ -46,8 +34,8 @@ const Reservation = ({ isOpen, onClose }) => {
       return false;
     }
 
-    if (guests > 10) {
-      toast.error("Max 10 guests per reservation");
+    if (guests > 5) {
+      toast.error("Max 5 guests per reservation");
       return false;
     }
 
@@ -62,15 +50,13 @@ const Reservation = ({ isOpen, onClose }) => {
     return true;
   };
 
-  // 🔥 Submit
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!validateForm()) return;
 
     setLoading(true);
 
-    // Fake API delay
     setTimeout(() => {
       setLoading(false);
 
@@ -90,7 +76,11 @@ const Reservation = ({ isOpen, onClose }) => {
 
   return (
     <div className="modal__overlay">
-      <div className="modal__content" ref={modalRef}>
+      <div
+        className="modal__content"
+        ref={modalRef}
+        onClick={(e) => e.stopPropagation()}
+      >
         <AiOutlineClose
           className="modal__close-icon"
           size={24}
