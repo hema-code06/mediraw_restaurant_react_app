@@ -48,11 +48,6 @@ This project highlights a full frontend experience with smooth animations, respo
 - Opening hours
 - Call-to-action button
 
-### 📞 Footer
-- Contact information
-- Working hours
-- Social media icons
-- Clean structured layout
 
 ---
 

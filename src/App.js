@@ -1,6 +1,6 @@
 import React from "react";
 import { ToastContainer } from "react-toastify";
-import { Chef, Find, Footer, Content, Gallery, Menu, Intro } from "./container";
+import { Chef, Find, Content, Gallery, Menu, Intro } from "./container";
 import { Navbar } from "./components";
 
 import "./App.css";
@@ -19,14 +19,13 @@ const App = () => {
           <Menu />
         </section>
 
-        <section id="chef">
-          <Chef />
-        </section>
-
         <section id="intro">
           <Intro />
         </section>
 
+        <section id="chef">
+          <Chef />
+        </section>
         <section id="gallery">
           <Gallery />
         </section>
@@ -35,7 +34,7 @@ const App = () => {
           <Find />
         </section>
       </main>
-      <Footer />
+      
 
       <ToastContainer position="top-right" autoClose={3000} />
     </div>

@@ -19,13 +19,11 @@ import welcome from "../assets/Home.png";
 import findus from "../assets/C.png";
 import sign from "../assets/sign.png";
 import Medit from "../assets/Medit.png";
-import Footer from "../assets/L.png";
 import spn from "../assets/spn.png";
 
 export default {
   reservation,
   chef,
-  Footer,
   spn,
   gallery01,
   gallery02,
@@ -45,5 +43,5 @@ export default {
   welcome,
   findus,
   sign,
-  Medit
+  Medit,
 };
