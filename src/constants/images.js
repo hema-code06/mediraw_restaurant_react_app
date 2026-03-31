@@ -1,3 +1,4 @@
+import reservation from '../assets/reservation.png';
 import chef from '../assets/cc.png';
 import gallery01 from '../assets/G1.jpg';
 import gallery02 from '../assets/G2.jpg';
@@ -23,6 +24,7 @@ import spn from '../assets/spn.png';
 
 
 export default {
+  reservation,
   chef,
   Footer,
   spn,

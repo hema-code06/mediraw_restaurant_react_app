@@ -76,9 +76,13 @@ const Navbar = () => {
         </ul>
 
         <div className="app__navbar-signin">
-          <button onClick={() => setShowModal(true)} className="book-btn">
+          <button
+            onClick={() => setShowModal(true)}
+            className="book-btn"
+            title="Book Table"
+          >
             <img
-              src="/assets/reservation.png"
+              src={images.reservation}
               alt="Book Table"
               className="book-icon"
             />
