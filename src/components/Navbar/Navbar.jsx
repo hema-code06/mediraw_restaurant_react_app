@@ -3,7 +3,7 @@ import "./Navbar.css";
 import Reservation from "../Reservation/Reservation";
 import images from "../../constants/images";
 
-const sections = ["home", "menu", "chef", "intro", "gallery", "contact"];
+const sections = ["home", "menu", "intro", "chef", "gallery", "contact"];
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
         root: null,
         rootMargin: "-40% 0px -50% 0px",
         threshold: 0,
-      }
+      },
     );
 
     sections.forEach((id) => {
