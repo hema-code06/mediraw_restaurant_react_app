@@ -25,25 +25,24 @@ const Reservation = ({ isOpen, onClose }) => {
     const { name, phone, guests, date, time } = formData;
 
     if (!name || !phone || !guests || !date || !time) {
-      toast.error("Please fill all fields");
+      toast.error("⚠ Please fill all fields");
       return false;
     }
 
     if (phone.length < 10) {
-      toast.error("Enter valid phone number");
+      toast.error("⚠ Enter valid phone number");
       return false;
     }
 
-    if (guests > 5) {
-      toast.error("Max 5 guests per reservation");
+    if (guests > 15) {
+      toast.error("⚠ Max 15 guests per reservation");
       return false;
     }
 
     const selectedDateTime = new Date(`${date}T${time}`);
-    const now = new Date();
 
-    if (selectedDateTime < now) {
-      toast.error("Cannot book past time");
+    if (selectedDateTime < new Date()) {
+      toast.error("⚠ Cannot book past time");
       return false;
     }
 
@@ -60,7 +59,7 @@ const Reservation = ({ isOpen, onClose }) => {
     setTimeout(() => {
       setLoading(false);
 
-      toast.success(`Table booked for ${formData.name} 🎉`);
+      toast.success(`Table booked successfully!!`);
 
       setFormData({
         name: "",
@@ -71,7 +70,7 @@ const Reservation = ({ isOpen, onClose }) => {
       });
 
       onClose();
-    }, 1500);
+    }, 1000);
   };
 
   return (
@@ -83,7 +82,6 @@ const Reservation = ({ isOpen, onClose }) => {
       >
         <AiOutlineClose
           className="modal__close-icon"
-          size={24}
           onClick={onClose}
         />
 
@@ -107,7 +105,7 @@ const Reservation = ({ isOpen, onClose }) => {
           <input
             name="guests"
             type="number"
-            placeholder="Guests (max 10)"
+            placeholder="Guests (max 15)"
             value={formData.guests}
             onChange={handleChange}
           />

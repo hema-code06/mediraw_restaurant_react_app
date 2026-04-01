@@ -1,9 +1,8 @@
 .modal__overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
   background: rgba(20, 20, 20, 0.6);
   backdrop-filter: blur(10px);
   display: flex;
@@ -11,19 +10,17 @@
   align-items: center;
   z-index: 1000;
   padding: 1rem;
-
   animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal__content {
   background: #fff;
   padding: 2rem;
-  border-radius: 16px;
-  width: 380px;
-  max-width: 100%;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
   text-align: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  border-top: 6px solid orangered;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   position: relative;
   animation: scaleIn 0.3s ease-in-out;
 }
@@ -34,16 +31,12 @@
 }
 
 .modal__content h2 {
-  font-style: italic;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: olivedrab;
-  margin-bottom: 1rem;
-  font-weight: 600;
+  margin-bottom: 2rem;
 }
 .modal__close-icon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   cursor: pointer;
   color: red;
   z-index: 10;
@@ -60,11 +53,10 @@
 
 .reservation__form input {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  width: 100%;
   font-size: 1rem;
   margin: 0.5rem 0;
   padding: 0.75rem;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #ddd;
   outline: none;
   transition: 0.3s ease;
@@ -82,7 +74,8 @@
   text-transform: uppercase;
   border-radius: 8px;
   border: none;
-  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
   transition: 0.3s ease;
 }
 
@@ -99,15 +92,6 @@
   background: gray;
   cursor: not-allowed;
 }
-.close__btn {
-  background: orangered;
-  color: #fff;
-}
-
-.close__btn:hover {
-  background: #c13a09;
-  transform: translateY(-2px);
-}
 
 .Toastify__toast {
   max-width: 100%;
@@ -115,8 +99,8 @@
   width: auto !important;
   white-space: pre-line;
 
-  background: #e6f4ea !important; /* soft green */
-  color: #1e4620 !important; /* dark green text */
+  background: #e6f4ea !important;
+  color: #1e4620 !important;
   border: 1px solid #c3e6cb;
   border-radius: 8px;
   padding: 10px 14px;
@@ -163,8 +147,7 @@
 
 @media screen and (max-width: 768px) {
   .modal__content {
-    width: 90%;
-    padding: 1.5rem;
+    max-width: 90%;
   }
 }
 
@@ -174,22 +157,12 @@
   }
 
   .modal__content {
-    border-radius: 16px 16px 0 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+    animation: slideUp 0.3s ease;
   }
 
-  .reservation__form input {
-    padding: 0.65rem;
-    font-size: 0.9rem;
-  }
-
-  .reservation__form button {
-    padding: 0.6rem;
-    font-size: 0.9rem;
-  }
-
-  .modal__content h2 {
-    font-size: 1.2rem;
-  }
   .Toastify__toast {
     width: 90% !important;
   }
