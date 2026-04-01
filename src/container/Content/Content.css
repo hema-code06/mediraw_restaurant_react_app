@@ -4,7 +4,6 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/* MAIN WRAPPER */
 .app__wrapper {
   display: flex;
   align-items: center;
@@ -14,7 +13,6 @@ body {
   min-height: auto;
 }
 
-/* IMAGE */
 .app__wrapper_img {
   flex: 1;
   display: flex;
@@ -30,7 +28,6 @@ body {
   display: block;
 }
 
-/* TEXT */
 .app__wrapper_info {
   flex: 1;
   display: flex;
@@ -39,17 +36,15 @@ body {
   flex-direction: column;
 }
 
-/* HEADING */
 .app__header-h1 {
   color: #056b05;
   font-weight: 700;
   letter-spacing: 0.12rem;
   text-transform: capitalize;
-  font-size: clamp(1.8rem, 3vw, 3rem); /* 🔥 responsive font */
+  font-size: clamp(1.8rem, 3vw, 3rem);
   margin-bottom: 1rem;
 }
 
-/* TEXT FIX */
 .app__wrapper_info h1 {
   margin-left: 0 !important;
 }
@@ -60,7 +55,6 @@ body {
   line-height: 1.6;
 }
 
-/* BUTTON */
 .custom__button {
   margin-top: 1rem;
   background: linear-gradient(135deg, orangered, #ff9143);
@@ -78,7 +72,6 @@ body {
   box-shadow: 0 8px 20px rgba(255, 69, 0, 0.3);
 }
 
-/* ANIMATIONS */
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-80%);
@@ -109,14 +102,12 @@ body {
   animation: slideInFromRight 1.2s ease forwards;
 }
 
-/* 🔥 LARGE SCREENS */
 @media screen and (min-width: 1600px) {
   .app__wrapper_img img {
     max-width: 600px;
   }
 }
 
-/* 🔥 TABLET */
 @media screen and (max-width: 900px) {
   .app__wrapper {
     flex-direction: column;
@@ -144,6 +135,6 @@ body {
   }
 
   .app__wrapper_img img {
-    max-height: 250px;   
+    max-height: 250px;
   }
 }

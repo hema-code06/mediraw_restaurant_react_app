@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { images } from "../../constants";
 import "./Chef.css";
 import { motion } from "framer-motion";
