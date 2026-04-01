@@ -3,7 +3,7 @@ import "./Navbar.css";
 import Reservation from "../Reservation/Reservation";
 import images from "../../constants/images";
 
-const sections = ["home", "menu", "intro", "chef", "gallery", "contact"];
+const sections = ["home", "menu", "chef", "gallery", "contact"];
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);

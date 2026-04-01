@@ -17,10 +17,6 @@ const App = () => {
           <Menu />
         </section>
 
-        <section id="intro">
-          <Intro />
-        </section>
-
         <section id="chef">
           <Chef />
         </section>

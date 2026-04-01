@@ -50,9 +50,15 @@ body {
 }
 
 .app__wrapper_info p {
-  margin-top: 0 !important;
+  margin: 1.5rem 0;
   font-size: clamp(0.95rem, 1.2vw, 1.1rem);
   line-height: 1.6;
+}
+
+.button__group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .custom__button {
@@ -70,6 +76,43 @@ body {
 .custom__button:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(255, 69, 0, 0.3);
+}
+
+.video__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.video__content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  animation: scaleIn 0.3s ease;
+}
+
+.video__content video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes slideInFromLeft {
@@ -112,7 +155,7 @@ body {
   .app__wrapper {
     flex-direction: column;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 2rem;
   }
 
   .app__wrapper_info {
@@ -127,7 +170,24 @@ body {
 @media screen and (max-width: 600px) {
   .app__wrapper {
     padding: 1.5rem 1rem;
-    gap: 1.5rem;
+  }
+  .button__group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .custom__button {
+    width: 100%;
+  }
+
+  .video__content {
+    width: 100%;
+  }
+
+  .video__close {
+    top: -30px;
+    right: 10px;
+    font-size: 1.8rem;
   }
 
   .app__wrapper_img {

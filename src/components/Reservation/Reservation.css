@@ -80,16 +80,14 @@
 }
 
 .reservation__form button[type="submit"] {
-  background: olivedrab;
+  background: orangered;
   color: #fff;
 }
 
 .reservation__form button[type="submit"]:hover {
-  background: #556b2f;
   transform: translateY(-2px);
 }
 .reservation__form button:disabled {
-  background: gray;
   cursor: not-allowed;
 }
 
