@@ -1,4 +1,3 @@
-import React from "react";
 import { ToastContainer } from "react-toastify";
 import { Chef, Find, Content, Gallery, Menu, Intro } from "./container";
 import { Navbar } from "./components";
@@ -10,7 +9,6 @@ const App = () => {
     <div className="app">
       <Navbar />
       <main>
-        {/* Sections with IDs for navigation */}
         <section id="home">
           <Content />
         </section>
@@ -34,7 +32,6 @@ const App = () => {
           <Find />
         </section>
       </main>
-      
 
       <ToastContainer position="top-right" autoClose={3000} />
     </div>

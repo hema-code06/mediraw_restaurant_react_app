@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Menu.css";
 import menuData from "../../constants/data";
 import MenuItem from "../../components/MenuItem/MenuItem";
