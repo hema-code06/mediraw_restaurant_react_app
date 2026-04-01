@@ -1,12 +1,3 @@
-.chef {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-}
-
 .chef-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -16,7 +7,6 @@
   width: 100%;
 }
 
-/* IMAGE */
 .chef-image {
   display: flex;
   justify-content: center;
@@ -34,7 +24,6 @@
   transform: scale(1.05);
 }
 
-/* CONTENT */
 .chef-content {
   display: flex;
   flex-direction: column;
@@ -56,10 +45,9 @@
   line-height: 1.6;
 }
 
-/* HIGHLIGHTS */
 .chef-highlights {
   display: flex;
-  flex-wrap: wrap; /* 🔥 important */
+  flex-wrap: wrap; 
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -79,7 +67,6 @@
   font-size: 1.4rem;
 }
 
-/* SIGNATURE */
 .chef-sign {
   margin-top: 1.5rem;
 }
@@ -99,7 +86,6 @@
   margin-top: 10px;
 }
 
-/* 🔥 TABLET */
 @media screen and (max-width: 900px) {
   .chef-container {
     grid-template-columns: 1fr;
