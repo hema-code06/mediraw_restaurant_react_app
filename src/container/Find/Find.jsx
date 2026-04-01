@@ -1,6 +1,4 @@
-import React from "react";
-import "./Find.css";
-import {about} from '../../constants';
+import { about } from "../../constants";
 
 const Find = () => {
   return (
@@ -12,7 +10,13 @@ const Find = () => {
         loop
         muted
         playsInline
-        controls={false} 
+        controls={false}
+        style={{
+          width: "100%",
+          height: "auto",
+          objectFit: "cover",
+          borderRadius: "8px",
+        }}
       />
     </div>
   );
