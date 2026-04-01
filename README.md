@@ -12,21 +12,23 @@ This project highlights a full frontend experience with smooth animations, respo
 - Responsive **Navbar with hamburger menu**
 - Smooth scrolling between sections
 - Mobile-friendly overlay menu
+- Online table booking system with toast notification
 
 ### 🏠 Landing Page
 - Attractive hero section with:
   - Title & tagline
-  - Call-to-action button
+  - Call-to-action and Intro-Video button
   - Animated visuals
 
 ### 🍴 Special Menu
 - Dynamic menu rendering using reusable components
-- Categorized dishes:
+- Categorized dishes with Search bar:
   - **Coastline Specials**
   - **Mezze Items**
 - Clean UI displaying:
-  - Dish name
+  - Dish name with image
   - Price
+  - Tag(Veg, Non-veg)
 
 ### 👨‍🍳 Chef Section
 - Inspirational chef quotes
@@ -39,15 +41,13 @@ This project highlights a full frontend experience with smooth animations, respo
 - Overlay UI with controls
 
 ### 🖼️ Gallery
-- Horizontal scrollable image gallery
+- Horizontal scrollable image gallery with text
 - Navigation arrows for scrolling
 - Instagram-style overlay icons
 
-### 📍 Find Us Section
+### 📍 Contact (Video)
 - Restaurant location details
 - Opening hours
-- Call-to-action button
-
 
 ---
 
@@ -57,6 +57,8 @@ This project highlights a full frontend experience with smooth animations, respo
 - **React**
 - **CSS3**
 - **React Icons**
+- **Toast Notification**
+- **Framer Motion**
 - **JavaScript (ES6+)**
 
 ### Design & UI
@@ -79,7 +81,7 @@ cd mediraw_restaurant_react_app
 
 ```bash
 npm install
-npm install react-icons
+npm install react-icons framer-motion
 ```
 
 ### 3️⃣ Run the Development Server
@@ -94,7 +96,6 @@ npm start
 
 ## 💡 Future Improvements
 
-- Online table booking system
 - Authentication for users
 - Admin dashboard for menu management
 - Payment gateway integration

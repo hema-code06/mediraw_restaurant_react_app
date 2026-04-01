@@ -1,5 +1,5 @@
 import { ToastContainer } from "react-toastify";
-import { Chef, Find, Content, Gallery, Menu, Intro } from "./container";
+import { Chef, Find, Content, Gallery, Menu } from "./container";
 import { Navbar } from "./components";
 
 import "./App.css";

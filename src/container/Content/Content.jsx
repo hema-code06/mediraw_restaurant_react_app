@@ -27,7 +27,7 @@ const Content = () => {
             className="custom__button"
             onClick={() => setShowVideo(true)}
           >
-            Watch Intro Video  ▶
+            Watch Intro Video &nbsp; ▶
           </button>
         </div>
       </div>
