@@ -46,7 +46,7 @@ export const galleryData = [
   },
 ];
 
-export default {
+const images = {
   reservation,
   chef,
   spn,
@@ -62,3 +62,5 @@ export default {
   sign,
   Medit,
 };
+
+export default images;
